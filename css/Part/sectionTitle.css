@@ -1,0 +1,33 @@
+:root {
+    /* Global Color */
+    --ColorBackground: #202428;
+    --ColorWhiteSection: #EEF0F4;
+
+    /* Detail Color */
+    --ColorSectionTitle: -webkit-linear-gradient(#dba843, #343017);
+    --ColorBorderStyle : 1px solid rgb(248, 181, 25);
+    --ColorBorderNavbar : 2px solid rgba(247, 156, 45, 0.7);
+    --ColorCircularButton : radial-gradient(circle, rgba(209, 186, 94, 0.5) 45%, rgba(130, 92, 32, 0.8) 80%, rgb(0, 0, 0) 100%);
+    --ColorH4: -webkit-linear-gradient(#f2ad2d, #7c4013);
+    --ColorP: #3a3f44;
+
+    /* Font */
+    --FontGlobal: 1rem;
+    --TextColorDark : #3a3f44;
+    --TextColorLight : #d1d9e8;
+}
+
+.sectionTitleContainer {
+    height: auto;
+    padding: 25px 0px 10px 20px;
+}
+
+.titleStyle {
+    font-size: 4rem;
+    background: #C91FCF;
+    background: var(--ColorSectionTitle);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 0px 0px 20px 0px;
+}

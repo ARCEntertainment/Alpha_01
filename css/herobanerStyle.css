@@ -1,0 +1,167 @@
+:root {
+    /* Global Color */
+    --ColorBackground: #202428;
+    --ColorWhiteSection: #EEF0F4;
+
+    /* Detail Color */
+    --ColorSectionTitle: -webkit-linear-gradient(#dba843, #343017);
+    --ColorBorderStyle : 1px solid rgb(248, 181, 25);
+    --ColorBorderNavbar : 2px solid rgba(247, 156, 45, 0.7);
+    --ColorCircularButton : radial-gradient(circle, rgba(209, 186, 94, 0.5) 45%, rgba(130, 92, 32, 0.8) 80%, rgb(0, 0, 0) 100%);
+    --ColorH4: -webkit-linear-gradient(#f2ad2d, #7c4013);
+    --ColorP: #3a3f44;
+
+    /* Font */
+    --FontGlobal: 1rem;
+    --TextColorDark : #3a3f44;
+    --TextColorLight : #d1d9e8;
+}
+
+
+/*Initialisation*/
+.banerContainer {
+    display: flex;
+    
+}
+
+.heroBaner {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 90vh;
+
+    background-image: url('../public/GoatBackground.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--ColorBackground);
+
+    border-bottom: var(--ColorBorderStyle);
+    
+
+}
+
+.actionContainer {
+    display: block;
+    padding: 15px;
+    width: 30%;
+    height: 25%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 10px;
+    border:1px solid rgba(255, 255, 255, 0.4);
+    margin: 20% 10% 0 0;
+
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.actionContainer p {
+    color:var(--TextColorLight);
+}
+
+.actionContainer:hover {
+    border: 1px solid rgb(255, 209, 117);
+    box-shadow: 0px 29px 30px -5px rgba(247, 170, 45, 0.7);
+}
+
+.CallToAction {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 95%;
+    height: 45px;
+    overflow: hidden;
+
+}
+
+.CallToAction > a > img {
+    width: 45px;
+    height: 45px;
+}
+
+.CallToAction > a > img:hover {
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.heroTitle {
+    position: relative;
+    top: 15px;
+    margin: 20px;
+    width: 100%;
+    
+}
+
+.heroTitle h1 {
+    color: rgb(185, 223, 255);
+    text-shadow:
+    0 0 7px #ff8800,
+    0 0 10px #ffd000,
+    0 0 21px #ffc800,
+    0 0 42px #feb013,
+    0 0 82px #feb013,
+    0 0 92px #feb013,
+    0 0 102px #feb013,
+    0 0 151px #feb013;
+
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+
+    animation: flicker 1.5s infinite alternate;  
+}
+
+.heroTitle p {
+    width: 270px;
+    text-align: right;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow:
+    0 0 7px #ff8800,
+    0 0 10px #ffd000,
+    0 0 21px #ffc800,
+    0 0 42px #feb013,
+    0 0 82px #feb013,
+    0 0 92px #feb013,
+    0 0 102px #feb013,
+    0 0 151px #feb013;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
+
+
+
+@media screen and (max-width:767.98px) {
+    .heroBaner {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .actionContainer {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+}

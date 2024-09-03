@@ -1,0 +1,61 @@
+section {
+    border-bottom: 1px solid rgb(97, 97, 97);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: calc(100vh - 58px);
+    margin-top: 15px;
+    top: 58px;
+
+    
+}
+
+.mapBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mapOrnement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    background: #202428;
+    border-radius: 10px;
+    box-shadow: inset 8.11px 8.11px 22px #171A1D, inset -8.11px -8.11px 22px #292E33;
+    border: 1px solid #2d2f33;
+}
+
+.infoBorder {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 100px;
+    border-right: 1px solid rgb(97, 97, 97);
+}
+
+
+@media screen and (max-width:767.98px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .infoBorder {
+        border: none;
+        text-align: center;
+    }
+
+    .mapBorder {
+        width: 70%;
+        padding-top: 5%;
+    }
+}

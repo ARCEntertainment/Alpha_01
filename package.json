@@ -1,0 +1,14 @@
+{
+  "name": "goat_crossfit",
+  "version": "1.0.0",
+  "description": "Website GOAT CrossFit by ARC Entertainment",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "ARC Entertainment",
+  "license": "ISC",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}

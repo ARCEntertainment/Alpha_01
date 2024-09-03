@@ -1,0 +1,55 @@
+:root {
+    /* Global Color */
+    --ColorBackground: #202428;
+    --ColorWhiteSection: #EEF0F4;
+
+    /* Detail Color */
+    --ColorSectionTitle: -webkit-linear-gradient(#dba843, #343017);
+    --ColorBorderStyle : 1px solid rgb(248, 181, 25);
+    --ColorBorderNavbar : 2px solid rgba(247, 156, 45, 0.7);
+    --ColorCircularButton : radial-gradient(circle, rgba(255, 240, 78, 0.7) 45%, rgba(207, 125, 25, 0.8) 80%, rgb(0, 0, 0) 100%);
+    --ColorH4: -webkit-linear-gradient(#f2ad2d, #7c4013);
+    --ColorP: #3a3f44;
+
+    /* Font */
+    --FontGlobal: 1rem;
+    --TextColorDark : #3a3f44;
+    --TextColorLight : #d1d9e8;
+}
+
+
+
+.containerMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: px; 
+    height: 90vh;
+    width: 100vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: var(--ColorWhiteSection);
+
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    position: relative;
+    top: 58px;
+    width: 100vw;
+    border: 1px solid rgb(153, 126, 51);
+    padding: 0px;
+}
+
+@media screen and (max-width:767.98px) {
+    .containerMain {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        height: auto;
+    }
+}

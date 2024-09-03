@@ -1,0 +1,74 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    /* Global Color */
+    --ColorBackground: #202428;
+    --ColorWhiteSection: #EEF0F4;
+
+    /* Detail Color */
+    --ColorSectionTitle: -webkit-linear-gradient(#dba843, #343017);
+    --ColorBorderStyle : 1px solid rgb(248, 181, 25);
+    --ColorBorderNavbar : 2px solid rgba(247, 156, 45, 0.7);
+    --ColorCircularButton : radial-gradient(circle, rgba(209, 186, 94, 0.5) 45%, rgba(130, 92, 32, 0.8) 80%, rgb(0, 0, 0) 100%);
+    --ColorH4: -webkit-linear-gradient(#f2ad2d, #7c4013);
+    --ColorP: #3a3f44;
+
+    /* Font */
+    --FontGlobal: 1rem;
+    --TextColorDark : #3a3f44;
+    --TextColorLight : #d1d9e8;
+}
+
+
+
+
+body {
+    background: var(--ColorBackground);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: rgb(248, 177, 25);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Playfair Display", serif;
+}
+
+h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: var(--ColorH4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    color: var(--TextColorDark);
+    font-family:  "Nanum Gothic", sans-serif;
+}
+
+.imgButton {
+    width: 70%;
+    height: 70%;
+    filter: opacity(50%);
+}
+
+
